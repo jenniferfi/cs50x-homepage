@@ -1,0 +1,138 @@
+/* Default values (small screens) */
+body {
+    background: linear-gradient(217deg, #4D194D, #212f45 70.71%),
+                linear-gradient(127deg, #0B525B , #312244  70.71%),
+                linear-gradient(336deg, #272640 , #006466 70.71%);
+    color: white;
+    text-align: center;
+}
+.parallax {
+    background-image: url("img/piqsels.com-id-zjlfu.jpg");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#front-title {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.front-content {
+    text-align: center;
+    height: 500px;
+    margin: 10px;
+}
+.card {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-height: 25em;
+    padding: 1.5em 0.5em;
+    margin: 0.5em 0.5em;
+}
+.tech-text {
+    text-align: left;
+}
+.tech img {
+    height: 100px;
+}
+.team img {
+    height: 280px;
+    width: 280px;;
+    margin:auto;
+    border-radius: 50%;
+}
+.presentation {
+    margin: 0em 0.5em; 
+    padding: 1.5em 0.5em;
+}
+.about-header p {
+    text-align: left;
+}
+.button {
+    background-color: white;
+    border: none;
+    color: #4d194d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+.button:hover {
+    background-color: #4d194d;
+    border: 2px solid white;
+    color:white;
+}
+
+a {
+    color: rgb(216, 0, 180);
+}
+a:hover {
+    color: rgb(219, 0, 226);
+}
+
+h2 {
+    padding: 1em 0;
+}
+.contact {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    margin: 30px auto;
+}
+#greeting {
+    margin: 2em;
+    font-size: 30px;
+}
+
+/* Bigger screens */
+@media only screen and (min-width: 700px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    }
+    .team-container {
+        display: grid;
+        grid-template-columns: 0.33fr 0.33fr 0.33fr;
+        margin: 0 0 2em 0;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .full {
+        margin: 0px; 
+        height: 100%;
+    }
+    .full-size {
+        margin: 0px; 
+        box-sizing: border-box; 
+        height: 100%;
+    }
+
+    .front-content {
+        margin: 5em 20em 0em 20em;
+    }
+    
+    #front-title {
+        top: 275px;
+    }
+    
+    .front {
+        padding: 1em;
+    }
+    
+    .front-container {
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        margin: 0px;
+        padding: 0;
+    }
+}
